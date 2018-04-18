@@ -5,6 +5,9 @@
  */
 package templatemethoddesignerpatterngof;
 
+import abstractclass.Application;
+import concreteclass.MyApplication;
+
 /**
  *
  * @author qt
@@ -15,7 +18,9 @@ public class TemplateMethodDesignerPatternGOF {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application app = new MyApplication();
+        
+        app.templateMethod();
     }
     
 }
